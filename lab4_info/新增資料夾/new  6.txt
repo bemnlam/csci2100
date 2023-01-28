@@ -1,0 +1,36 @@
+7
+7
+#######
+#   #X#
+# ### #
+#O    #
+##### #
+#X    #
+#######
+
+ X=7 ; Y=7
+NEO: (1, 3)
+#######
+#.. #X#
+#.###.#
+#.....#
+#####.#
+#X....#
+#######
+node:(2,1); waysum:1
+node:(1,1); waysum:1
+node:(1,2); waysum:1
+exit:(1,5)
+node:(2,5); waysum:1
+node:(3,5); waysum:1
+node:(4,5); waysum:1
+node:(5,5); waysum:1
+node:(5,4); waysum:1
+exit:(5,1)
+node:(5,2); waysum:1
+node:(5,3); waysum:2
+node:(4,3); waysum:1
+node:(3,3); waysum:1
+node:(2,3); waysum:1
+node:(1,3); waysum:2
+請按任意鍵繼續 . . .

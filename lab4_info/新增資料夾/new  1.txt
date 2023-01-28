@@ -1,0 +1,13 @@
+findNode(Mat,posX,posY,dir)
+	while(1)
+		if(one side == #)
+			mark(posX,posY)
+			findNode(Mat,nextX,nextY,nextDir)
+			findNode(Mat,nextX2,nextY2,nextDir2)
+		else if(2 side == # && dirw/# !=dir)
+			mark(posX,posY)
+			findNode(Mat,nextX,nextY,nextDir)
+		else 
+			return;
+	}
+		

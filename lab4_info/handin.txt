@@ -1,0 +1,3 @@
+gtar zcvf 1155003510.tar.gz PA4.c
+
+uuencode 1155003510.tar.gz 1155003510.tar.gz | mailx -s "ASG4 1155003510" csci2100b

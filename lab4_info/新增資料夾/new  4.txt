@@ -1,0 +1,45 @@
+if(dir!='N' && Mat[posY-1][posX]!='#'){
+		 Mat[posY-1][posX] = '*';
+		 print(Mat);
+		 findNode(Mat, posX, posY-1,'S');
+		
+		wayS++;
+		}
+	if(dir!='E' && Mat[posY][posX-1]!='#'){
+		Mat[posY+1][posX] = '*';
+		 print(Mat);
+		findNode(Mat, posX-1, posY,'W');
+		wayW++;
+	}
+	if(dir!='S' && Mat[posY-1][posX]!='#'){
+		Mat[posY+1][posX] = '*';
+		 print(Mat);
+		findNode(Mat, posX, posY-1,'N');
+		wayN++;
+	}
+	if(dir!='W' && Mat[posY][posX+1]!='#'){
+		Mat[posY+1][posX] = '*';
+		 print(Mat);
+		findNode(Mat, posX+1, posY, 'E');
+		wayE++;
+	}
+	
+	if(dir=='N')
+		wayS--;
+	if(dir=='E')
+		wayW--;
+	if(dir=='S')
+		wayN--;
+	if(dir=='W')
+		wayE--;
+	
+	waySum = wayN+wayE+wayS+wayW;
+
+	if(waySum>=1){
+		printf("node:(%d,%d); waysum:%d\n", posX, posY-1,waySum);
+		return;
+	}
+	if(waySum==0 && Mat[posY][posX]=='X'){
+		printf("exit:(%d,%d)\n", posX, posY-1);
+		return;
+	}

@@ -1,0 +1,4 @@
+gtar zcvf 1155003510.tar.gz dict.c       
+uuencode 1155003510.tar.gz 1155003510.tar.gz | mailx -s "ASG2 1155003510" csci2100b
+gcc -lm -w -O3 -static -o dict dict.c
+

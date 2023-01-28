@@ -1,0 +1,24 @@
+//A[l].Xprev.Xnext = A[l].Xnext;
+	if(A[l].Ynext<0 && A[l].Xnext<0){
+		A[l].Yprev = -1;
+	}
+	if(A[l].Yprev>0 && A[l].Ynext<0 && A[l].Xnext>0){
+		A[l].Yprev.Ynext = A[l].Xnext;
+		A[l].Xnext.Yprev = A[l].Yprev;
+		A[l].Xnext.Xprev = -1;
+	}
+	if(A[l].Xprev>0 && A[l].Xnext>0){
+		if(A[l].Ynext<0){
+			A[l].Xprev.Xnext = A[l].Xnext;
+			A[l].Xnext.Xprev = A[l].Xprev;
+		}else{
+			A[l].Xprev.Xnext = A[l].Ynext;
+			A[l].Xnext.Xprev = A[l].Ynext;
+			A[l].Ynext.Yprev = -1;
+			A[l].Ynext.Xprev = A[l].Xprev;
+			oif(A[l].Ynext.Xnext<0){
+				A[l].Ynext.Xnext = A[l].Xnext;
+			}else{
+
+
+		}

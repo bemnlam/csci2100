@@ -1,0 +1,61 @@
+
+
+
+
+	if(dir=='S'||dir=='N'){
+		if(Mat[posY][posX+1]!='#'){
+			Mat[posY][posX+1] = '*';
+			print(Mat);
+			findNode(Mat, posX+1, posY, 'E');
+			wayE++;
+		}
+		if(Mat[posY][posX-1]!='#'){
+			Mat[posY][posX-1] = '*';
+			print(Mat);
+			findNode(Mat, posX-1, posY, 'W');
+			wayW++;
+		}
+		if(dir=='S'){
+			Mat[posY+1][posX] = '*';
+			print(Mat);
+			findNode(Mat, posX, posY+1, 'S');
+			wayS++;
+			return;
+		}
+		if(dir=='N'){
+			Mat[posY-1][posX] = '*';
+			print(Mat);
+			findNode(Mat, posX, posY-1, 'S');
+			wayS++;
+			return;
+		}
+	}
+	if(dir=='W'||dir=='E'){
+		if(Mat[posY-1][posX]!='#'){
+			Mat[posY-1][posX] = '*';
+			print(Mat);
+			findNode(Mat, posX, posY-1, 'N');
+			wayE++;
+		}
+		if(Mat[posY+1][posX]!='#'){
+			Mat[posY+1][posX] = '*';
+			print(Mat);
+			findNode(Mat, posX, posY+1, 'E');
+			wayW++;
+		}
+		if(dir=='W'){
+			Mat[posY][posX-1] = '*';
+			print(Mat);
+			findNode(Mat, posX-1, posY, 'W');
+			wayS++;
+			return;
+		}
+		if(dir=='E'){
+			Mat[posY][posX+1] = '*';
+			print(Mat);
+			findNode(Mat, posX+1, posY, 'S');
+			wayS++;
+			return;
+		}
+	}
+	return;

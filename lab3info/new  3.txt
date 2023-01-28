@@ -1,0 +1,36 @@
+void print(int i){
+
+	puts(A[i].name);
+	
+	if(A[i].Ynext>0){
+		printf("+");
+		print(A[i].Ynext);
+	}
+	
+	if(A[i].Xnext>0){
+		i=A[i].Xnext;
+		print(i);
+	}
+	
+	return;
+}
+
+
+void print(int i, int lvl){
+	int j,k;
+	//inlvl = lvl+1;
+	do{
+	for(j=0; j<lvl; j++){
+		printf("+");
+	}
+	puts(A[i].name);
+	if(A[i].Ynext>0){
+		print(A[i].Ynext, ++lvl);
+	}
+	i=A[i].Xnext;
+	}while(A[i].Xnext>0);
+	return;
+	//}
+
+	//return;
+}

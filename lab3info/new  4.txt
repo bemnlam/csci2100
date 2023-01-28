@@ -1,0 +1,26 @@
+Hello
+Hello hires me
+me hires you
+Hello hires us
+us hires baby
+Hello hires them
+baby hires sally
+sally hires kit
+
+
+Matthew
+Matthew   hires  Hackson
+Matthew   hires  Siyao
+Matthew   hires Leo
+Hackson   hires Eric
+Hackson   hires  Michael
+Eric   hires Louis
+Eric   hires  Frankie
+Eric   hires  Cecilia
+print
+Matthew   hires Chiu
+fire   Hackson
+print
+fire  Leo
+fire   Louis
+print
